@@ -23,14 +23,15 @@ pip install -r requirements.txt
 ```
 2. Executar o notebook notebooks/p1_que_tempo_fixo.ipynb de principio a fin.
 ## 4. Táboa de Decisións de Limpeza
-Problema detectado,Detección,Acción realizada
-Nomes de columna con espazos/maiúsculas,df.columns,Homoxeneización a minúsculas e sen espazos
-Valores ausentes representados como - ou NA,na_values en pd.read_csv,Conversión automática a NaN
-Filas duplicadas para a mesma data,df.duplicated('date'),Eliminación conservando a primeira aparición
-Datas que faltan na secuencia,Reindexación con pd.date_range,Inserción de filas con NaN para manter continuidade
-Temperaturas fóra de rango (>45ºC),Gráfica de liñas / df.describe(),Subscrición por NaN e interpolación liñal
-Precipitacións negativas,Outliers / valores < 0,Conversión a 0.0
-Inconsistencia tmin > tmax,Validación lóxica df['tmin'] > df['tmax'],Reemplazo por NaN e interpolación
+| Problema detectado | Detección | Acción realizada | 
+| ----- | ----- | ----- | 
+| **Nomes de columna con espazos / maiúsculas** | `df.columns` | Homoxeneización a minúsculas e sen espazos. | 
+| **Valores ausentes representados como `-`, `NA` ou `-9999`** | `na_values` en `pd.read_csv` | Conversión automática a `NaN`. | 
+| **Filas duplicadas para a mesma data** | `df.duplicated('date')` | Eliminación conservando a primeira aparición. | 
+| **Datas que faltan na secuencia** | Reindexación con `pd.date_range` | Inserción de filas con `NaN` para manter continuidade temporal. | 
+| **Temperaturas fóra de rango (>45ºC)** | Gráfica de liñas / `df.describe()` | Substitución por `NaN` e interpolación liñal. | 
+| **Precipitacións negativas** | Outliers / valores `< 0` | Conversión a `0.0`. | 
+| **Inconsistencia `tmin` > `tmax`** | Validación lóxica `df['tmin'] > df['tmax']` | Reemplazo por `NaN` e interpolación. | 
 
 ## 5. Uso da Intelixencia Artificial
 Ferramentas utilizadas: ChatGPT / Gemini
