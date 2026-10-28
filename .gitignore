@@ -1,0 +1,15 @@
+# Ficheiros de datos (o repositorio entreégase co cartafol datos/ baleiro)
+datos/raw/*
+datos/clean/*
+!datos/raw/.gitkeep
+!datos/clean/.gitkeep
+
+# Entorno e Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+
+# PostgreSQL
+pgdata/
