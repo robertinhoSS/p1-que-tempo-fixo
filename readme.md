@@ -36,4 +36,4 @@ pip install -r requirements.txt
 ## 5. Uso da Intelixencia Artificial
 Ferramentas utilizadas: ChatGPT / Gemini
 
-Uso: Asistencia na xeración das consultas de agregación de PostgreSQL e estruturación de gráficos con Matplotlib/Seaborn. Todo o código foi probado e verificado localmente.
+Uso: Asistencia na xeración das consultas de agregación de PostgreSQL, estruturación de gráficos con Matplotlib/Seaborn e formateo do readme. Todo o código foi probado e verificado localmente.
